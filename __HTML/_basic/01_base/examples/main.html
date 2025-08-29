@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+    <head>
+        <!-- 시스템 Meta -->
+        <title>Basic HTML Example page</title>
+        <link rel="icon" href="static/favicon.ico" sizes="32x32">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap">
+        <link rel="stylesheet" href="css/font.css">
+        <style>
+            h1{
+                color: orangered
+            }
+            h2{
+                color: darkorange;
+                text-decoration: underline;
+            }
+        </style>
+        
+        <script src="js/userinfo.js"></script>
+        <script id="default_userinfo" type="application/json">
+            {
+                "name": "Jenny",
+                "age": 25
+            }
+        </script>
+
+        <!-- 사용자 정의 Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="refresh" content="30">
+        <meta name="description" content="기본 HTML 태그 사용 테스트용 페이지입니다.">
+    </head>
+    <body>
+        <h1>기본 HTML 테스트 페이지</h1>
+        <h2>실험</h2>
+        <div style="display:block;">
+            <input id="name" type="text" placeholder="Name">
+            <input id="age"  type="number" placeholder="Age">
+        </div>
+        <input type="button" value="저장" onclick="save()">
+        <input type="button" value="로드" onclick="load()">
+        <input type="button" value="초기화" onclick="reset()">
+
+        &nbsp;
+        <h2>출처</h2>
+        <p>ICO (아이콘) : <a href="https://icon-icons.com/ko/%EC%95%84%EC%9D%B4%EC%BD%98/%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81-%ED%95%99%EA%B5%90-%EA%B5%90%EC%9C%A1-%EB%AA%A8%EC%9E%90-%EC%A1%B8%EC%97%85-e-%EB%9F%AC%EB%8B%9D-%ED%95%99%EC%8A%B5-%EC%97%90/267060">icon-icons.com</a></p>
+        <p>Font 출처 : <a href="https://fonts.google.com/specimen/Sunflower">Sunflower - Google Fonts</a></p>
+        <p>참고로 이 페이지는 30초마다 갱신됩니다.</p>
+    </body>
+</html>
